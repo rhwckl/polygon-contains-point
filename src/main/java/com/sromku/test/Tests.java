@@ -17,7 +17,7 @@ public class Tests
 	 */
 	public static void testSimplePolygon()
 	{
-		Polygon polygon = Polygon.Builder()
+		Polygon polygon = Polygon.newBuilder()
 				.addVertex(new Point(1, 3))
 				.addVertex(new Point(2, 8))
 				.addVertex(new Point(5, 4))
@@ -39,7 +39,7 @@ public class Tests
 	 */
 	public static void testPolygonWithHoles()
 	{
-		Polygon polygon = Polygon.Builder()
+		Polygon polygon = Polygon.newBuilder()
 				.addVertex(new Point(1, 2)) // polygon
 				.addVertex(new Point(1, 6))
 				.addVertex(new Point(8, 7))
